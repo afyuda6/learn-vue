@@ -41,7 +41,7 @@ export default {
   methods: {
     detailmovie(id) {
       axios
-        .get("https://www.omdbapi.com/?apikey=8f658eda&i=" + id + "/")
+        .get("https://www.omdbapi.com/?apikey=8f658eda&i=" + id)
         .then((res) => {
           this.detail = res.data;
           console.log(this.detail);
