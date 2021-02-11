@@ -41,7 +41,7 @@ export default {
   methods: {
     detailmovie(id) {
       axios
-        .get("http://www.omdbapi.com/?apikey=8f658eda&i=" + id)
+        .get("https://www.omdbapi.com/?apikey=8f658eda&i=" + id + "/")
         .then((res) => {
           this.detail = res.data;
           console.log(this.detail);
@@ -50,7 +50,7 @@ export default {
     },
     searchmovie(name) {
       axios
-        .get("http://www.omdbapi.com/?apikey=8f658eda&s=" + name)
+        .get("https://www.omdbapi.com/?apikey=8f658eda&s=" + name + "/")
         .then((res) => {
           this.search = res.data.Search;
           this.search = this.search.filter(
