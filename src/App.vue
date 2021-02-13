@@ -56,7 +56,7 @@ export default {
           this.search = this.search.filter(
             (searched) => searched.Poster != "N/A"
           );
-          console.log(this.detail);
+          console.log(this.search);
         })
         .catch((err) => console.log(err));
     },
